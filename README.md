@@ -358,6 +358,8 @@ revenue, returning a value between 0 and 1. This value represents the percentage
 farmers with a total revenue less than or equal to the current farmer's revenue. For 
 example, the value of 0.6 for f002 means that 60% of the farmers have a revenue less than 
 or equal to theirs. 
-  
+
+
+
 
 
