@@ -200,6 +200,8 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/DENSE_RANK%20().png?raw=true)
+
 ## Interpretation:
 This function assigns a rank to each row within a partition, but 
 without any gaps in the ranking sequence. Similar to the RANK() function in this 
