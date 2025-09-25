@@ -181,6 +181,8 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/RANK().png?raw=true).
+
 ## Interpretation: 
 This function assigns a rank to each farmer based on their total revenue, with 
 no gaps in the ranking if there are ties. In the current dataset, all total revenue values are 
