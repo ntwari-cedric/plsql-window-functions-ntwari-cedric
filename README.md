@@ -314,6 +314,8 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LAG%20().png?raw=true).
+
 ## Interpretation: 
 This function compares the current sale amount with the sale amount from 
 the previous transaction, ordered by date. The 'difference' column highlights the increase or 
@@ -333,6 +335,8 @@ SELECT
     LEAD(amount, 1) OVER (ORDER BY sale_date) - amount AS difference
 FROM sales
 ORDER BY sale_date;
+
+![image alt] ([image_url](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LEAD%20().png?raw=true)).
 
 ## Interpretation: 
 This function compares the current sale amount with the sale amount of the 
