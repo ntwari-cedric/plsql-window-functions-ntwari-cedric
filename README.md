@@ -80,6 +80,7 @@ This project uses those three related tables: **farmers**, **crops**, and **sale
 
 after this the next step is create the table and inserting all the the data i next
 ( all my work i use postgre database)
+my ER diagram  ![image alt] (https://raw.githubusercontent.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/e5b1b1142f3b7fd106bbf82aba32f2882b490ca3/ER%20diagram.png).
 
 ## table creation
  ### --creation of farmer table
