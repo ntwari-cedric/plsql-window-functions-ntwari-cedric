@@ -246,7 +246,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/everage.png?raw=true).
+
 
 ## Interpretation: 
 This query calculates the cumulative sum of sales over time, showing the 
@@ -285,6 +285,8 @@ SELECT
     ) AS moving_average_3_month
 FROM sales
 ORDER BY sale_date;
+
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/everage.png?raw=true).
 
 ## Interpretation: 
 This query employs the AVG() function as a window function with a defined frame to calculate a 
