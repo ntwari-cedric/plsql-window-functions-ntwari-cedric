@@ -219,6 +219,8 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/PERCENT_RANK%20().png?raw=true).
+
 ## Interpretation: 
 This function calculates the relative rank of each farmer within the group as 
 a percentage, ranging from 0 to 1. A percent rank of 0 indicates the top performer (f003) and 
