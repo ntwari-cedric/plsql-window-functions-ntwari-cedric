@@ -246,6 +246,8 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/everage.png?raw=true).
+
 ## Interpretation: 
 This query calculates the cumulative sum of sales over time, showing the 
 running total as each new sale occurs. The results demonstrate how the total revenue grows 
