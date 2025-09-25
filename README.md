@@ -358,6 +358,8 @@ FROM sales
 GROUP BY farmer_id
 ORDER BY total_revenue DESC;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/NTILE%20(4).png?raw=true).
+
  ## Interpretation: 
  This function divides the farmers into four performance tiers or quartiles 
 based on their total revenue. The output classifies the top two farmers (f003 and f004) into 
@@ -376,6 +378,8 @@ SELECT
 FROM sales
 GROUP BY farmer_id
 ORDER BY total_revenue DESC;
+
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/CUME_DIST%20().png?raw=true).
 
   ## interpretation: 
 This function calculates the cumulative distribution of each farmer's total 
