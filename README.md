@@ -336,7 +336,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-![image alt] ([image_url](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LEAD%20().png?raw=true)).
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LEAD%20().png?raw=true).
 
 ## Interpretation: 
 This function compares the current sale amount with the sale amount of the 
