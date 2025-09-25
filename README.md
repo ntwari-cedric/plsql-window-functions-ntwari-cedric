@@ -261,6 +261,8 @@ SELECT
     MAX(amount) AS maximumSale
 FROM sales;
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/Min%20()%20&max%20().png?raw=true)
+
 ## Interpretation:
 These functions find the minimum and maximum values from the entire 
 sales table. The output provides a single row showing the lowest and highest revenue
