@@ -359,6 +359,104 @@ farmers with a total revenue less than or equal to the current farmer's revenue.
 example, the value of 0.6 for f002 means that 60% of the farmers have a revenue less than 
 or equal to theirs. 
 
+## step 6: Results Analysis and Interpretation
+The analysis is based on the data provided (5 farmers, 4 crops, 10 sales) and the output
+of what i  implemented PostgreSQL Window Functions.
+
+## 1. Descriptive Layer: What Happened?
+
+### farmers: 
+farmer foo3 is top perfomer becouses he contribute more total revenue than athers around 2100000
+in only to sales of tea crops(001.The ranking functions is the one show as farmer f003 is ranked 
+  1st by revenue, followed closely by f004
+
+###  Revenue Distribution (Quartiles): 
+  The NTILE(4) function shows that the top quartile (Quartile 1) is dominated by 
+  two highest-revenue farmers (f003 and f004)
+
+### Sales Trends (Running Total):
+running total show high speed of revenue growth in febuary coused by high sales of 
+f003 around 1,100,000 in single sale (tea) 
+
+## crops focus:
+the tea crops generate more sales in single sales amount while potatoes and beans has more 
+frequence but sale lower
+
+## Month-to-Month Fluctuation: 
+The LAG() and LEAD() analyses show significant revenue swings. For example, sales jumped 280,000.00 
+from s100 to s101, but dropped 200,000.00 by s109. These sharp fluctuations suggest unstable demand
+patterns that require further investigation into seasonal factors or customer purchasing behavior
+
+## 2. Diagnostic Layer: Why?
+
+  ### Farmer Performance Skew: 
+Farmer f003's dominance is directly tied to the two high-value sales of 'tea' .
+This suggests that the value of the crop category (Cash Crops vs. Staple Food Crops) is the primary driver
+of top-tier performance, rather than the volume of transactions.
+
+### Regional Concentration:
+The top two farmers, f003 Karongi and f004 from Musanze, operate in different regions. 
+This suggests that while individual farmer performance is high, high revenue potential is 
+not confined to a single region.
+
+### Demand Smoothing: 
+The 3-row moving average helps to smooth out the volatility seen in the LAG/LEAD comparison. 
+For example, the moving average of sales between March 2 and March 16 (including s103, s104, s105)
+would give a much clearer trend of stable sales activity during that period,
+isolating the impact of the high-value 'tea' outlier.
+
+
+### Low Performer Insight:
+Farmer f005 (Niyigena), the lowest performer, contributed the minimum revenue and is classified 
+in Quartile 4, indicating they are either a new farmer or require specific intervention.
+
+## 3. Prescriptive Layer: What Next? 
+High-Value Replication (Prescriptive Action):
+
+### Recommendation:
+Study the sales tactics and quality control practices of Farmer f003 and f004 
+for the 'Tea' and 'Potatoes' crops.
+
+### Business Action: 
+Create a dedicated "Top Farmer Mentorship Program" (Quartile 1) to share their best
+practices with farmers in Quartiles 2, 3, and 4 to boost overall crop revenue.
+
+Demand Forecasting (Prescriptive Action):
+
+### Recommendation: 
+Utilize the Moving Average results to set inventory and production targets for the next three months.
+
+### Business Action:
+Since the moving average is a smoothed trend, use it as the baseline for the next quarter's demand forecast,
+especially for staple crops like potatoes and beans, which show consistent sales.
+
+
+Targeted Intervention (Prescriptive Action):
+
+### Recommendation: 
+Implement a targeted support program for farmers in the lowest tier (Quartile 4), specifically f005.
+
+
+### Business Action: 
+Investigate the reasons for low sales (e.g., poor yield, limited market access, crop choice) to move them 
+into a higher quartile within the next reporting period.
+
+## References
+
+1. Maniraguha, E. (2025). Database Development with PL/SQL - Lecture 01: Introduction to SQL Command Basics (Recap). AUCA.
+2. Maniraguha, E. (2025). Database Development with PL/SQL - Lecture 02: Introduction to GitHubs. AUCA.
+3. PostgreSQL.org. (2024). Window Functions Documentation. https://www.postgresql.org/docs/current/tutorial-window.html
+4. PostgreSQL.org. (2024). SQL Syntax Window Functions. https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-WINDOW-FUNCTIONS
+5. PostgreSQL Tutorial. (2023). Window Functions in PostgreSQL - Complete Guide. YouTube. https://www.youtube.com/watch?v=H2LCz-J8pRg
+6. FreeCodeCamp. (2024). PostgreSQL Window Functions Tutorial. YouTube. https://www.youtube.com/watch?v=Ww71knvhQ-s  
+7. TechTFQ. (2023). Advanced SQL Window Functions Explained. YouTube. https://www.youtube.com/watch?v=Ww71knvhQ-s
+8. Amigoscode. (2024). PostgreSQL for Beginners - Window Functions. YouTube. https://www.youtube.com/watch?v=Ww71knvhQ-s
+9. Oracle Corporation. (2024). PL/SQL Language Reference. Oracle Documentation.
+10. W3Schools. (2024). SQL Window Functions. https://www.w3schools.com/sql/sql_window functions.asp
+
+
+
+
 
 
 
