@@ -116,6 +116,8 @@ INSERT INTO farmers (farmer_id, name, region) VALUES ('f003', 'mvuyekure', 'karo
 INSERT INTO farmers (farmer_id, name, region) VALUES ('f004', 'masunzu', 'musanze');
 INSERT INTO farmers (farmer_id, name, region) VALUES ('f005', 'niyigena', 'rubavu');
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/Farmers%20table.png?raw=true).
+
 ## --inserting data into crops table
 INSERT INTO crops (crop_id, crop_name, category) VALUES ('001', 'tea', 'Cash Crops');
 INSERT INTO crops (crop_id, crop_name, category) VALUES ('002', 'maize', 'Staple Food Crops');
