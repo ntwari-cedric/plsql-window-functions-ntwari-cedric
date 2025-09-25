@@ -122,6 +122,8 @@ INSERT INTO crops (crop_id, crop_name, category) VALUES ('002', 'maize', 'Staple
 INSERT INTO crops (crop_id, crop_name, category) VALUES ('003', 'potatoes', 'Staple Food Crops');
 INSERT INTO crops (crop_id, crop_name, category) VALUES ('004', 'beans', 'Staple Food Crops');
 
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/crops%20table.png?raw=true).
+
 ## --inserting data into sales table
 INSERT INTO sales (sale_id, farmer_id, crop_id, sale_date, amount) VALUES ('s100', 'f004', '003', '2025-01-02', 820000.00);
 INSERT INTO sales (sale_id, farmer_id, crop_id, sale_date, amount) VALUES ('s101', 'f003', '001', '2025-02-04', 1100000.00);
