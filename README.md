@@ -246,7 +246,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-
+![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/sales(sum).png?raw=true).
 
 ## Interpretation: 
 This query calculates the cumulative sum of sales over time, showing the 
