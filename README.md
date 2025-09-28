@@ -138,7 +138,7 @@ INSERT INTO sales (sale_id, farmer_id, crop_id, sale_date, amount) VALUES ('s107
 INSERT INTO sales (sale_id, farmer_id, crop_id, sale_date, amount) VALUES ('s108', 'f001', '004', '2025-07-11', 120000.00);
 INSERT INTO sales (sale_id, farmer_id, crop_id, sale_date, amount) VALUES ('s109', 'f002', '003', '2025-09-01', 500000.00);
 
-![sales table] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/sales%20table.png?raw=true).
+![sales table](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/sales%20table.png?raw=true).
 
 # i done creating my table and inserting data in it the next step is to apply the window function
 
