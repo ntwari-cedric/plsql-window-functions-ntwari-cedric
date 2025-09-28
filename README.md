@@ -161,7 +161,7 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/ROW_NUMBER%20().png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/ROW_NUMBER%20().png?raw=true).
 
 ## Interpretation
 This function assigns a unique, sequential number to each row based 
