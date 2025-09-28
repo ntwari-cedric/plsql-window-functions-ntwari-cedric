@@ -181,7 +181,7 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/RANK().png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/RANK().png?raw=true).
 
 ## Interpretation: 
 This function assigns a rank to each farmer based on their total revenue, with 
@@ -200,7 +200,7 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/DENSE_RANK%20().png?raw=true)
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/DENSE_RANK%20().png?raw=true)
 
 ## Interpretation:
 This function assigns a rank to each row within a partition, but 
@@ -219,7 +219,7 @@ SELECT
 FROM sales
 GROUP BY farmer_id;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/PERCENT_RANK%20().png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/PERCENT_RANK%20().png?raw=true).
 
 ## Interpretation: 
 This function calculates the relative rank of each farmer within the group as 
@@ -246,7 +246,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/sales(sum).png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/sales(sum).png?raw=true).
 
 ## Interpretation: 
 This query calculates the cumulative sum of sales over time, showing the 
@@ -263,7 +263,7 @@ SELECT
     MAX(amount) AS maximumSale
 FROM sales;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/Min%20()%20&max%20().png?raw=true)
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/Min%20()%20&max%20().png?raw=true)
 
 ## Interpretation:
 These functions find the minimum and maximum values from the entire 
@@ -286,7 +286,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/everage.png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/everage.png?raw=true).
 
 ## Interpretation: 
 This query employs the AVG() function as a window function with a defined frame to calculate a 
@@ -314,7 +314,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LAG%20().png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LAG%20().png?raw=true).
 
 ## Interpretation: 
 This function compares the current sale amount with the sale amount from 
@@ -336,7 +336,7 @@ SELECT
 FROM sales
 ORDER BY sale_date;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LEAD%20().png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/LEAD%20().png?raw=true).
 
 ## Interpretation: 
 This function compares the current sale amount with the sale amount of the 
@@ -358,7 +358,7 @@ FROM sales
 GROUP BY farmer_id
 ORDER BY total_revenue DESC;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/NTILE%20(4).png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/NTILE%20(4).png?raw=true).
 
  ## Interpretation: 
  This function divides the farmers into four performance tiers or quartiles 
@@ -379,7 +379,7 @@ FROM sales
 GROUP BY farmer_id
 ORDER BY total_revenue DESC;
 
-![image alt] (https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/CUME_DIST%20().png?raw=true).
+![image alt](https://github.com/ntwari-cedric/plsql-window-functions-ntwari-cedric/blob/main/CUME_DIST%20().png?raw=true).
 
   ## interpretation: 
 This function calculates the cumulative distribution of each farmer's total 
