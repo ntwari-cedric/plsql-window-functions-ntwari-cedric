@@ -1,3 +1,8 @@
+## Name : 
+ntwari cedric
+## id
+28228
+
 # plsql-window-functions-ntwari-cedric
 # step 1:  Problem Definition 
   # Business Context 
